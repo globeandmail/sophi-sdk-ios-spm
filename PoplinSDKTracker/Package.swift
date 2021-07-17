@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "PoplinSDKTracker",
+    name: "PoplinSDK",
     platforms: [
         .iOS(.v13), .tvOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "PoplinSDKTracker",
-            targets: ["PoplinSDKTracker"]),
+            name: "PoplinSDK",
+            targets: ["PoplinSDK"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,8 +24,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "PoplinSDKTracker",
-            url: "https://github.com/poplindata/ios-tracker-spm/PoplinSDKTracker.xcframework.zip",
-            checksum: "4b7f087bb7d826090edc051423616c01df84c7d83fe585b3d104464ae372301d"
+            url: "https://github.com/poplindata/ios-tracker-spm/blob/main/PoplinSDKTracker/PoplinSDK.xcframework.zip",
+            checksum: "40171c6235b2cb037937a0aab0fd08a76964ad383ed45852335e956c8792096b"
         )
     ]
 )
