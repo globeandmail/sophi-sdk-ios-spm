@@ -20,6 +20,13 @@ let package = Package(
         .binaryTarget(
             name: "SophiSDKTracker",
             path: "SophiSDK.xcframework"
-        )
+        ),
+        .target(name: "SophiSDKTrackerTargets",
+                       dependencies: [
+                           .target(name: "SophiSDKTracker"),
+                           .product(name: "SnowplowTracker", package: "SnowplowTracker")
+                       ],
+                       path: "Sources")
     ]
 )
+
