@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "SophiSDK",
-            targets: ["SophiSDKTrackerTargets"]),
+            targets: ["SophiSDKTracker", "SophiSDKTrackerTarget"]),
     ],
     dependencies: [
         .package(name: "SnowplowTracker", url: "https://github.com/snowplow/snowplow-objc-tracker", from: "2.2.2")
@@ -21,7 +21,7 @@ let package = Package(
             name: "SophiSDKTracker",
             path: "SophiSDK.xcframework"
         ),
-        .target(name: "SophiSDKTrackerTargets",
+        .target(name: "SophiSDKTrackerTarget",
                        dependencies: [
                            .target(name: "SophiSDKTracker"),
                            .product(name: "SnowplowTracker", package: "SnowplowTracker")
