@@ -4,18 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "SophiSDK",
+    name: "SophiSDKTracker",
     platforms: [
         .iOS(.v13), .tvOS(.v13)
     ],
     products: [
         .library(
-            name: "SophiSDK",
-            targets: ["SophiSDK"]),
+            name: "SophiSDKTracker",
+            targets: ["SophiSDKTarget"]),
     ],
     targets: [
         .binaryTarget(
-            name: "SophiSDK",
+            name: "SophiSDKTarget",
             path: "SophiSDK.xcframework"
         ),
     ]
