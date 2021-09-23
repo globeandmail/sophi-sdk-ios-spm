@@ -4,29 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "SophiSDKTracker",
+    name: "SophiSDK",
     platforms: [
         .iOS(.v13), .tvOS(.v13)
     ],
     products: [
         .library(
             name: "SophiSDK",
-            targets: ["SophiSDKTracker", "SophiSDKTrackerTarget"]),
-    ],
-    dependencies: [
-        .package(name: "SnowplowTracker", url: "https://github.com/snowplow/snowplow-objc-tracker", from: "2.2.2")
+            targets: ["SophiSDK"]),
     ],
     targets: [
         .binaryTarget(
-            name: "SophiSDKTracker",
+            name: "SophiSDK",
             path: "SophiSDK.xcframework"
         ),
-        .target(name: "SophiSDKTrackerTarget",
-                       dependencies: [
-                           .target(name: "SophiSDKTracker"),
-                           .product(name: "SnowplowTracker", package: "SnowplowTracker")
-                       ],
-                       path: "Sources")
     ]
 )
 
