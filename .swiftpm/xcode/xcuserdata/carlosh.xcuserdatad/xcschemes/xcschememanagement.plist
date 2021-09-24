@@ -57,6 +57,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>SophiSDKTrackerPackageTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>SophiSDKTrackerTarget</key>
 		<dict>
 			<key>primary</key>
