@@ -5,7 +5,6 @@ To install SophiTracker with SPM:
 1. In Xcode, select File > Swift Packages > Add Package Dependency
 2. Add the url where to download the library: https://github.com/globeandmail/sophi-sdk-ios-spm
 
-
 # Usage
 
 ```swift
@@ -19,7 +18,7 @@ let config = SophiTracker.Config(client: "APP_ID",
                                          environment: .dev,
                                          appVersion: "1.0",
                                          userID: nil)
-        
+
  tracker?.setUpTracker(config: config)
 
 ```
